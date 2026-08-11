@@ -6,6 +6,8 @@ import './App.css'
 import EffectCounter from './components/EffectCounter';
 import WindowSize from './components/WindowSize';
 import ThemeToggle from './components/ThemeToggle';
+import PostListWithHook from './components/PostListWithHook';
+import FetchPostList from './components/FetchPostList';
 function App() {
   const [count, setCount] = useState(0)
 
@@ -121,6 +123,8 @@ function App() {
         <EffectCounter />
       <WindowSize />
       <ThemeToggle />
+      <PostListWithHook />
+      <FetchPostList />
       </div>
       <section id="spacer"></section>
     </>
