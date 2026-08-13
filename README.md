@@ -17,6 +17,6 @@ If you are developing a production application, we recommend using TypeScript wi
 # CommunityHub - Week 9
 
 ## Accessibility Audit
-- Before: [score]/100
-- After fixes: [score]/100
+- Before: [55]/100
+- After fixes: [60]/100
 - Fixes made: added alt text to Avatar images, ensured all form inputs have labels, added lang attribute to html tag

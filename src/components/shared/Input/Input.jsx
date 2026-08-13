@@ -17,7 +17,7 @@ function Input({
                     {required && <span className="text-red-500">*</span>}
                 </label>
             )}
-            <input
+            <input>
                 type={type}
                 id={name}
                 name={name}
@@ -30,7 +30,7 @@ function Input({
                     focus:outline-none focus:ring-2 focus:ring-blue-500
                     ${error ? 'border-red-500 focus:ring-red-500' : 'border-gray-300'}
                 `}
-            />
+            </input>
             {error && <p className="mt-1 text-sm text-red-500">{error}</p>}
         </div>
     );

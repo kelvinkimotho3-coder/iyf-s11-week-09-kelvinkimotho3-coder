@@ -25,7 +25,7 @@ function Button({
     };
 
     return (
-        <button
+        <button>
             type={type}
             onClick={onClick}
             disabled={disabled || loading}
@@ -36,7 +36,7 @@ function Button({
                 ${fullWidth ? 'w-full' : ''}
                 ${disabled ? 'opacity-50 cursor-not-allowed' : ''}
             `}
-        >
+        
             {loading ? "Loading..." : children}
         </button>
     );
