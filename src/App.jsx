@@ -1,12 +1,19 @@
+import { useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout';
 import Home from './pages/Home';
 import Posts from './pages/Posts';
 import PostDetail from './pages/PostDetail';
+import CreatePost from './pages/CreatePost';
 import About from './pages/About';
 import NotFound from './pages/NotFound';
 
 function App() {
+    const [localPosts, setLocalPosts] = useState([]);
+
+    const handleCreatePost = (newPost) => {
+        setLocalPosts([newPost, ...localPosts]);
+    };
     return (
         <Routes>
             <Route path="/" element={<Layout />}>
